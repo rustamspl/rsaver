@@ -1,0 +1,46 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8">
+    <title>VK Saver</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <script src="../local_storage.js"></script>
+</head>
+<body>
+<div id="tabs">
+    <a href="#" class="tab selected" id="link_vk_groups">VK Saver</a>
+    <a href="#" class="tab" id="link_options">Настройки</a>
+</div>
+<hr size="1" color="#ccc"/>
+<div style="display: none" class="tab_content" id="options">
+    <input type="radio" value="showNone" class="showBitrate" name="showBitrate" id="sb1"/>
+    <label for='sb1'> Не показывать битрейт и размер </label><br>
+
+    <input type="radio" value="showHover" class="showBitrate" name="showBitrate" id="sb2"/>
+    <label for='sb2'> Показывать битрейт и размер при наведении на аудиозапись </label><br>
+
+    <input type="radio" value="showAll" class="showBitrate" name="showBitrate" id="sb3"/>
+    <label for='sb3'> Всегда показывать битрейт и размер(может сильно влиять на производительность) </label> <br>
+
+    <span id="chromeDownloadFolder">Все пути к папкам относительны папки для загрузок. Оставьте поле пустым,
+    если вы не хотите, чтобы файлы скачивались во вложенные папки</span><br/>
+    <table cellpadding="0" cellspacing="5" border="0" style="border-collapse: collapse">
+        <tr>
+            <td><label for="audioDownloadFolder">Папка для скачивания музыки</label></td>
+            <td><input id="audioDownloadFolder"/></td>
+        </tr>
+        <tr>
+            <td> <label for="videoDownloadFolder">Папка для скачивания видео</label></td>
+            <td>   <input id="videoDownloadFolder"/></td>
+        </tr>
+    </table>
+
+    <div id="status"></div>
+    <button id="save">Сохранить</button>
+</div>
+
+<script src="popup.js"></script>
+<script src="../options.js"></script>
+</body>
+</html>

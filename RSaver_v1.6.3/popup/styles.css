@@ -1,0 +1,86 @@
+body {
+    min-width: 535px;
+    overflow-x: hidden;
+}
+
+.artist {
+    color: #2B587A;
+    font-weight: bold;
+}
+.full_title {
+    transition: opacity .5s;
+}
+.one-pending-audio {
+    padding:10px;
+}
+.one-pending-audio:hover {
+    background-color: #EDF1F5;
+    cursor: pointer;
+}
+
+.audio_remove {
+    width: 13px;
+    position: relative;
+    cursor: pointer;
+    visibility: hidden;
+    overflow: hidden;
+    background: url('chrome-extension://__MSG_@@extension_id__/assets/images/audio_icons.png') -107px -51px no-repeat;
+    height: 13px;
+    float: right;
+    transition: opacity .5s;
+}
+.one-pending-audio:hover .audio_remove {
+    visibility: visible;
+}
+
+.removed_audio .full_title, .removed_audio .audio_remove{
+    opacity: .4;
+}
+hr {
+    background-color: rgb(218, 225, 232);
+    color: rgb(218, 225, 232);
+}
+.removed_audio .audio_remove {
+    margin: 0;
+    background: url('chrome-extension://__MSG_@@extension_id__/assets/images/audio_icons.png') -79px -51px no-repeat;
+    height: 12px;
+    visibility: visible;
+
+}
+.removed_audio .audio_remove:hover {  opacity: 1 !important;  }
+
+a {
+    color: #2B587A;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* TABS */
+
+.tab {
+    color: rgb(69, 104, 142);
+    border-radius: 2px;
+    padding: 3px 8px 4px;
+    display: inline-block;
+    text-decoration: none !important;
+    font-weight: bold;
+}
+
+.tab:hover {
+    background: #E1E7ED;
+}
+
+.tab.selected {
+    color: white !important;
+    background-color: #597DA3 !important;
+}
+
+.divider {
+    color: #777;
+    font-weight: normal;
+    padding: 0px 5px;
+}

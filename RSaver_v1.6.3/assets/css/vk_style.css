@@ -1,0 +1,226 @@
+#audio.new .audio .info
+{
+	width: 356px !important;
+}
+
+#audio.new .audio .title_wrap
+{
+	width: 294px !important;
+}
+.audios_module .audio .title_wrap
+{
+	width:319px !important;
+}
+
+
+.narrow_column .audio .title_wrap {
+width: 100px !important;
+}
+
+.audio .info, #pad_playlist_panel .audio .area {
+width: auto !important;
+}
+/*new VK*/
+._at-saver-video.mv_more.idd_wrap .idd_popup .idd_header.idd_arrow {
+    line-height: 12px;
+    padding: 7px 15px 8px 15px;
+}
+._at-saver-video .idd_item:hover {
+    background: #e1e7ed;
+}
+.downloadVideoButton {
+	background: url('chrome-extension://__MSG_@@extension_id__/assets/images/download_new.gif') center center no-repeat;
+	width:37px;
+	height: 37px;
+	display: inline-block;
+	cursor: pointer;
+	opacity: 0.6;
+	margin-left: 8px;
+	border-radius: 3px;
+}
+
+.downloadVideoButton:hover {
+	background-color: rgba(34,34,34,.9);;
+	opacity: 1;
+}
+.downloadVideoButtonBottom {
+	background: url('chrome-extension://__MSG_@@extension_id__/assets/images/download_new.gif') center center no-repeat;
+	width:24px;
+	height: 24px;
+	display: inline-block;
+	cursor: pointer;
+	opacity: 0.6;
+	background-color: rgba(0,0,0,.9);
+	margin-left: 8px;
+	border-radius: 3px;
+}
+
+.downloadVideoButtonBottom:hover {
+	background-color: rgba(34,34,34,.9);;
+	opacity: 1;
+}
+.downloadVideoLink
+{
+	color: #FFF !important;
+	padding-left:12px;
+	margin-right: 5px;
+	background: url("chrome-extension://__MSG_@@extension_id__/assets/images/icon_video.png") no-repeat center left;
+	opacity:.5;
+}
+
+.downloadVideoLink:hover
+{
+	opacity:1;
+}
+
+.bitrate {
+font-size: .9em;
+position:absolute;
+top:0;
+left:0;
+}
+
+.selectedAudio{
+background-color: rgba(10, 0, 255, 0.31);
+border-radius: 5px;
+}
+.downloadAll {
+	position: absolute;
+	top: 0px;
+	right: 52px !important;
+	width: 26px;
+	height: 26px;
+	opacity: 0.7;
+	filter: alpha(opacity=70);
+}
+#album0 .downloadAll {
+	right: 26px !important;
+
+}
+
+.downloadAllNew.audio_album_btn {
+	height: 19px;
+	width: 19px;
+	background: url('chrome-extension://__MSG_@@extension_id__/assets/images/icon_album.png') no-repeat 5px 5px;
+	margin: 6px 4px 0px 0px;
+}
+
+.downloadAll.icon_wrap .icon {
+	background:url('chrome-extension://__MSG_@@extension_id__/assets/images/icon_album.png');
+	background-position: 0px 0px !important;
+}
+
+.selected .downloadAll.icon_wrap .icon {
+	background:url('chrome-extension://__MSG_@@extension_id__/assets/images/icon_album_white.png');
+	background-position: 0px 0px !important;
+}
+
+.downloadAll:hover{
+	background: rgba(0,0,0,0.1);
+}
+
+.size {
+	font-size: .8em;
+	color: #939699;
+	position: absolute;
+	right:0;
+}
+
+.downloadAlbumCheckbox{
+}
+
+.videoDownloaderWrapper {
+	text-align: right !important;
+	padding: 5px;
+	background-color: black;
+}
+
+.videoDownloaderWrapper > div {
+	color: #777;
+	margin-right: 2px;
+	display: inline-block;
+}
+.br320 {
+	background-color: hsla(190,100%,50%,1) !important;
+}
+.br288 {
+	background-color: hsla(190,100%,45%,1) !important;
+}
+.br256 {
+	background-color: hsla(190,100%,40%,1) !important;
+}
+.br224 {
+	background-color: hsla(190,100%,30%,1) !important;
+}
+.br192 {
+	background-color: hsla(190,100%,25%,1) !important;
+}
+.br160 {
+	background-color: hsla(190,100%,15%,1) !important;
+}
+.br128 {
+	background-color: hsla(190,100%,10%,1) !important;
+}
+
+
+.bitrated_audio {
+	color: white !important;
+	font-size: 8px !important;
+	border-radius: 2px !important;
+	text-align: center !important;
+	display: inline-block !important;
+	width: 18px !important;
+	height: 12px !important;
+	background-image: none !important;
+	opacity: 1 !important;
+	vertical-align: top !important;
+	margin-top: 1px !important;
+	margin-right: 4px !important;
+	text-shadow: 0px 0px 10px black
+}
+
+/*VK REPLACEMENT */
+/* Чтобы не пропадала полоска скачивания */
+#mv_player_box {
+	height: 565px !important;
+}
+
+#mv_player_box embed#video_player {
+	height: 540px !important;
+}
+.photos_save_actions {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 8px;
+    padding: 3px;
+    border-radius: 2px;
+    -o-transition: opacity 60ms linear;
+    transition: opacity 60ms linear;
+    z-index: 2;
+    color: #fff;
+    background: rgba(0,0,0,.5);
+    font-size: 12.5px;
+    line-height: 0;
+    opacity: 0;
+    cursor: default;
+}
+.photos_save_actions>div {
+    cursor: pointer;
+    display: inline-block;
+    padding: 3px;
+    opacity: 0.7;
+    top: 0;
+}
+.photos_album:hover .photos_save_actions, .photos_photo_edit_row:hover .photos_save_actions, .photos_save_actions>div:hover {
+    opacity: 1;
+}
+.photos_save_actions .icon {
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.photos_album_save_actions {
+    display: inline-block;
+}
